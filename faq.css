@@ -1,0 +1,125 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #1f2b7b;
+}
+.faq-heading{
+    color: #f6f6f659;
+    padding: 20px 60px;
+    font-style: bold;
+    font-size: 300%;
+    text-align: center;
+    text-emphasis:unset;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+.faq-page {
+    color: #000000;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+   width: 50%; 
+   padding: auto;
+   
+}
+.active,
+.faq-page:hover {
+    background-color: #4c47d8;
+}
+.faq-body {
+    padding: 0 18px;
+    background-color: rgb(82, 86, 217);
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #485de1;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px; /* Adjust this as needed for your layout */
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgb(43, 53, 189), rgb(8, 12, 73));
+    padding: 200px 0; /* Adjust the padding as needed */
+}
+
+.footer .text { 
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+    font-style: italic;
+    font-size: 100%;
+}
+
+
+.back {
+    color: white;
+    font-style: normal;
+    background-color: #1f2b7b;
+    text-decoration: none;
+    position: absolute;
+    top: 50px;
+    left: 2200px;
+    font-size: 300%;
+    transform: scale(0.5);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.back::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(16, 56, 234);
+    transition: width 0.3s ease;
+}
+
+.back:hover {
+    color: #ffffff;
+    font-style: normal;
+    background-color: #1f2b7b;
+}
+
+.back:hover::after {
+    width: 100%;
+}
+
+.faqlogo { 
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 900px;
+}
+
+.faqlogo2 { 
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 900px;
+    top: 50px;
+}
